@@ -1,0 +1,461 @@
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCommentResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCommentResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCommentResponse.java	(date 1557298690552)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryComment;
+ 
+ public class ImageGalleryCommentResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryComment> ListItems;
++    public List<ImageGalleryComment> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryComment Item;
++    public ImageGalleryComment Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentFavoriteListResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentFavoriteListResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentFavoriteListResponse.java	(date 1557298690465)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryContent;
+ 
+ public class MusicGalleryContentFavoriteListResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContent> ListItems;
++    public List<MusicGalleryContent> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContent Item;
++    public MusicGalleryContent Item;
+ }
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTag.java	(date 1557298897558)
+@@ -7,7 +7,7 @@
+ import ntk.base.api.model.BaseEntity;
+ import ntk.base.api.movieGallery.model.MovieGalleryCategoryTag;
+ 
+-public class ImageGalleryCategoryTag extends BaseEntity {
++public class ImageGalleryCategoryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentOtherInfoResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentOtherInfoResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentOtherInfoResponse.java	(date 1557298690533)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryContentOtherInfo;
+ 
+ public class ImageGalleryContentOtherInfoResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContentOtherInfo> ListItems;
++    public List<ImageGalleryContentOtherInfo> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContentOtherInfo Item;
++    public ImageGalleryContentOtherInfo Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategory.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategory.java	(date 1557298690487)
+@@ -7,7 +7,7 @@
+ import ntk.base.api.model.BaseEntity;
+ import ntk.base.api.movieGallery.model.MovieGalleryCategory;
+ 
+-public class MusicGalleryCategory extends BaseEntity {
++public class MusicGalleryCategory {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTagResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTagResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryTagResponse.java	(date 1557298690495)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryCategoryTag;
+ 
+ public class ImageGalleryCategoryTagResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryCategoryTag> ListItems;
++    public List<ImageGalleryCategoryTag> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryCategoryTag Item;
++    public ImageGalleryCategoryTag Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTagResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTagResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTagResponse.java	(date 1557298690580)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryTag;
+ 
+ public class MusicGalleryTagResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryTag> ListItems;
++    public List<MusicGalleryTag> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryTag Item;
++    public MusicGalleryTag Item;
+ }
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTagResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTagResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTagResponse.java	(date 1557298690543)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryTag;
+ 
+ public class ImageGalleryTagResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryTag> ListItems;
++    public List<ImageGalleryTag> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryTag Item;
++    public ImageGalleryTag Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentOtherInfoResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentOtherInfoResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentOtherInfoResponse.java	(date 1557298690571)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryContentOtherInfo;
+ 
+ public class MusicGalleryContentOtherInfoResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContentOtherInfo> ListItems;
++    public List<MusicGalleryContentOtherInfo> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContentOtherInfo Item;
++    public MusicGalleryContentOtherInfo Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTagResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTagResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTagResponse.java	(date 1557298690525)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryCategoryTag;
+ 
+ public class MusicGalleryCategoryTagResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryCategoryTag> ListItems;
++    public List<MusicGalleryCategoryTag> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryCategoryTag Item;
++    public MusicGalleryCategoryTag Item;
+ }
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentFavoriteListResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentFavoriteListResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentFavoriteListResponse.java	(date 1557298690503)
+@@ -10,8 +10,8 @@
+ public class ImageGalleryContentFavoriteListResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContent> ListItems;
++    public List<ImageGalleryContent> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContent Item;
++    public ImageGalleryContent Item;
+ }
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryContentResponse.java	(date 1557298690595)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryContent;
+ 
+ public class ImageGalleryContentResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContent> ListItems;
++    public List<ImageGalleryContent> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContent Item;
++    public ImageGalleryContent Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryTag.java	(date 1557298734730)
+@@ -7,7 +7,7 @@
+ import ntk.base.api.model.BaseEntity;
+ import ntk.base.api.movieGallery.model.MovieGalleryCategoryTag;
+ 
+-public class MusicGalleryCategoryTag extends BaseEntity {
++public class MusicGalleryCategoryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryTag.java	(date 1557298897550)
+@@ -4,7 +4,7 @@
+ 
+ import ntk.base.api.model.BaseEntity;
+ 
+-public class ImageGalleryTag extends BaseEntity {
++public class ImageGalleryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategoryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategoryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategoryTag.java	(date 1557298897564)
+@@ -6,7 +6,7 @@
+ 
+ import ntk.base.api.model.BaseEntity;
+ 
+-public class MovieGalleryCategoryTag extends BaseEntity {
++public class MovieGalleryCategoryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategoryResponse.java	(date 1557298690512)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryCategory;
+ 
+ public class ImageGalleryCategoryResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryCategory> ListItems;
++    public List<ImageGalleryCategory> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryCategory Item;
++    public ImageGalleryCategory Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCategoryResponse.java	(date 1557298690608)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryCategory;
+ 
+ public class MusicGalleryCategoryResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryCategory> ListItems;
++    public List<MusicGalleryCategory> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryCategory Item;
++    public MusicGalleryCategory Item;
+ }
+Index: api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryTag.java	(date 1557298897580)
+@@ -4,7 +4,7 @@
+ 
+ import ntk.base.api.model.BaseEntity;
+ 
+-public class MovieGalleryTag extends BaseEntity {
++public class MovieGalleryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryContentResponse.java	(date 1557298690562)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryContent;
+ 
+ public class MusicGalleryContentResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryContent> ListItems;
++    public List<MusicGalleryContent> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryContent Item;
++    public MusicGalleryContent Item;
+ }
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTag.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTag.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryTag.java	(date 1557298897587)
+@@ -4,7 +4,7 @@
+ 
+ import ntk.base.api.model.BaseEntity;
+ 
+-public class MusicGalleryTag extends BaseEntity {
++public class MusicGalleryTag {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategory.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/imageGallery/model/ImageGalleryCategory.java	(date 1557298897574)
+@@ -7,7 +7,7 @@
+ import ntk.base.api.model.BaseEntity;
+ import ntk.base.api.movieGallery.model.MovieGalleryCategory;
+ 
+-public class ImageGalleryCategory extends BaseEntity {
++public class ImageGalleryCategory {
+ 
+     @SerializedName("Id")
+     public long Id;
+Index: api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCommentResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCommentResponse.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/musicGallery/model/MusicGalleryCommentResponse.java	(date 1557298690474)
+@@ -5,13 +5,12 @@
+ import java.util.List;
+ 
+ import ntk.base.api.model.ErrorException;
+-import ntk.base.api.movieGallery.model.MovieGalleryComment;
+ 
+ public class MusicGalleryCommentResponse extends ErrorException {
+ 
+     @SerializedName("ListItems")
+-    public List<MovieGalleryComment> ListItems;
++    public List<MusicGalleryComment> ListItems;
+ 
+     @SerializedName("Item")
+-    public MovieGalleryComment Item;
++    public MusicGalleryComment Item;
+ }
+Index: api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategory.java	(revision a6c84e3d01c75732fd1332dea32c70aa5777368f)
++++ api/src/main/java/ntk/base/api/movieGallery/model/MovieGalleryCategory.java	(date 1557298897596)
+@@ -6,7 +6,7 @@
+ 
+ import ntk.base.api.model.BaseEntity;
+ 
+-public class MovieGalleryCategory extends BaseEntity {
++public class MovieGalleryCategory {
+ 
+     @SerializedName("Id")
+     public long Id;
