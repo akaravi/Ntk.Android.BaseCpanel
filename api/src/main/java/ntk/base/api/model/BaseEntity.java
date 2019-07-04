@@ -3,6 +3,7 @@ package ntk.base.api.model;
 import com.google.gson.annotations.SerializedName;
 
 public class BaseEntity {
+
     @SerializedName("LinkSiteId")
     public Long LinkSiteId;
 
