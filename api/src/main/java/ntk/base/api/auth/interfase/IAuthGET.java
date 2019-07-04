@@ -3,8 +3,6 @@ package ntk.base.api.auth.interfase;
 import java.util.Map;
 
 import io.reactivex.Observable;
-import ntk.base.api.auth.model.AuthSearchNewRequest;
-import ntk.base.api.auth.model.AuthSearchNewResponse;
 import ntk.base.api.auth.model.AuthSiteAccessResponse;
 import ntk.base.api.auth.model.AuthSiteStorageResponse;
 import retrofit2.http.Body;
