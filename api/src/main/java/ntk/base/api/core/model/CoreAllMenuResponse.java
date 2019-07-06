@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.model.ErrorException;
+import ntk.base.api.model.BaseEntity;
 
-public class CoreUserResponse extends ErrorException {
+public class CoreAllMenuResponse extends BaseEntity {
 
     @SerializedName("ListItems")
-    public List<CoreUser> ListItems;
+    public List<CoreAllMenu> ListItems;
 
     @SerializedName("Item")
-    public CoreUser Item;
+    public CoreAllMenu Item;
 }

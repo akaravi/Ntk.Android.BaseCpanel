@@ -3,6 +3,7 @@ package ntk.base.api.article.interfase;
 import java.util.Map;
 
 import io.reactivex.Observable;
+import ntk.base.api.article.model.ArticleCountResponse;
 import ntk.base.api.article.model.ArticleCategoryRequest;
 import ntk.base.api.article.model.ArticleCategoryResponse;
 import ntk.base.api.article.model.ArticleCategoryTagRequest;
@@ -24,16 +25,21 @@ import ntk.base.api.article.model.ArticleContentOtherInfoResponse;
 import ntk.base.api.article.model.ArticleContentSimilarListRequest;
 import ntk.base.api.article.model.ArticleContentViewRequest;
 import ntk.base.api.article.model.ArticleContentResponse;
+import ntk.base.api.article.model.ArticleCountRequest;
 import ntk.base.api.article.model.ArticleTagRequest;
 import ntk.base.api.article.model.ArticleTagResponse;
-import ntk.base.api.model.ErrorException;
 import retrofit2.http.Body;
-import retrofit2.http.GET;
 import retrofit2.http.HeaderMap;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface IArticle {
+
+    @POST("api/articlecontent/count/")
+    @Headers({"content-type: application/json"})
+    Observable<ArticleCountResponse> GetCount(@HeaderMap Map<String, String> headers , @Body ArticleCountRequest request);
+
+    //
 
     @POST("api/app/")
     @Headers({"content-type: application/json", "layout: ArticleContentList"})

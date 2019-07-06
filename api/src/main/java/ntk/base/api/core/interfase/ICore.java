@@ -5,8 +5,18 @@ import java.util.Map;
 import io.reactivex.Observable;
 import ntk.base.api.core.model.CoreAboutUsResponse;
 import ntk.base.api.core.model.ButtonResponse;
+import ntk.base.api.core.model.CoreAllMenuResponse;
+import ntk.base.api.core.model.CoreAllWithAliasResponse;
+import ntk.base.api.core.model.CoreClearTokenResponse;
+import ntk.base.api.core.model.CoreCountRequest;
+import ntk.base.api.core.model.CoreCountResponse;
+import ntk.base.api.core.model.CoreGetAllRequest;
 import ntk.base.api.core.model.CoreLocationRequest;
 import ntk.base.api.core.model.CoreLocationResponse;
+import ntk.base.api.core.model.CoreSearchNewRequest;
+import ntk.base.api.core.model.CoreSearchNewResponse;
+import ntk.base.api.core.model.CoreSelectCurrentSiteRequest;
+import ntk.base.api.core.model.CoreSelectCurrentSiteResponse;
 import ntk.base.api.core.model.CoreTheme;
 import ntk.base.api.core.model.CoreUserResponse;
 import ntk.base.api.core.model.CoreUserChangePasswordRequest;
@@ -27,6 +37,36 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface ICore {
+
+    @POST("api/CoreUser/userLogin/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreUserResponse> UserLogin(@HeaderMap Map<String, String> headers, @Body CoreUserLoginRequest request);
+
+    @POST("api/CoreSite/getAllwithalias/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreAllWithAliasResponse> GetAllWithAlias(@HeaderMap Map<String, String> headers, @Body CoreGetAllRequest request);
+
+    @POST("api/CoreCpMainMenu/GetAllMenu/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreAllMenuResponse> GetAllMainMenu(@HeaderMap Map<String, String> headers, @Body CoreGetAllRequest request);
+
+    @POST("api/CoreUser/SelectCurrentSite/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreSelectCurrentSiteResponse> SelectCurrentSite(@HeaderMap Map<String, String> headers, @Body CoreSelectCurrentSiteRequest request);
+
+    @POST("api/CoreSite/search_new/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreSearchNewResponse> SearchNew(@HeaderMap Map<String, String> headers, @Body CoreSearchNewRequest request);
+
+    @POST("api/CoreSite/count/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreCountResponse> GetCount(@HeaderMap Map<String, String> headers, @Body CoreCountRequest request);
+
+    @POST("CoreUser/UserClearToken")
+    @Headers({"content-type: application/json"})
+    Observable<CoreClearTokenResponse> ClearToken(@HeaderMap Map<String, String> headers);
+
+    //
 
     @POST("api/app/")
     @Headers({"content-type: application/json", "layout: Main"})
@@ -68,9 +108,7 @@ public interface ICore {
     @Headers({"content-type: application/json", "layout: CoreUserForgetPassword"})
     Observable<CoreUserResponse> userForgetPassword(@HeaderMap Map<String, String> headers, @Body CoreUserForgetPasswordRequest request);
 
-    @POST("api/app/")
-    @Headers({"content-type: application/json", "layout: CoreUserLogin"})
-    Observable<CoreUserResponse> userLogin(@HeaderMap Map<String, String> headers, @Body CoreUserLoginRequest request);
+
 
     @POST("api/app/")
     @Headers({"content-type: application/json", "layout: CoreUserLoginByMobile"})

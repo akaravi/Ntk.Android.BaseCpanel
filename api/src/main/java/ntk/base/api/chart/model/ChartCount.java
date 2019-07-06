@@ -1,4 +1,4 @@
-package ntk.base.api.article.model;
+package ntk.base.api.chart.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 import ntk.base.api.model.BaseEntity;
 
-public class ArticleContent extends BaseEntity {
+class ChartCount extends BaseEntity {
 
     @SerializedName("Id")
     public long Id;
@@ -18,7 +18,7 @@ public class ArticleContent extends BaseEntity {
     public Long linkCategoryId;
 
     @SerializedName("virtual_Category")
-    public ArticleCategory virtualCategory;
+    public ChartCategory virtualCategory;
 
     @SerializedName("Title")
     public String Title;
@@ -28,6 +28,7 @@ public class ArticleContent extends BaseEntity {
 
     @SerializedName("Body")
     public String Body;
+
 
     @SerializedName("Favorited")
     public Boolean Favorited;
@@ -67,4 +68,5 @@ public class ArticleContent extends BaseEntity {
 
     @SerializedName("Source")
     public String Source;
+
 }

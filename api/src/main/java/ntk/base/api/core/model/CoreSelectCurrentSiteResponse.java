@@ -6,11 +6,11 @@ import java.util.List;
 
 import ntk.base.api.model.ErrorException;
 
-public class CoreUserResponse extends ErrorException {
+public class CoreSelectCurrentSiteResponse extends ErrorException {
 
     @SerializedName("ListItems")
-    public List<CoreUser> ListItems;
+    public List<CoreSelectCurrentSite> ListItems;
 
     @SerializedName("Item")
-    public CoreUser Item;
+    public CoreSelectCurrentSite Item;
 }

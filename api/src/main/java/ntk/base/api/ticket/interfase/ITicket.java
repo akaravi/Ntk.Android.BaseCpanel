@@ -7,6 +7,8 @@ import ntk.base.api.ticket.model.TicketingAnswerListRequest;
 import ntk.base.api.ticket.model.TicketingAnswerListResponse;
 import ntk.base.api.ticket.model.TicketingAnswerSubmitRequest;
 import ntk.base.api.ticket.model.TicketingAnswerSubmitResponse;
+import ntk.base.api.ticket.model.TicketingCountRequest;
+import ntk.base.api.ticket.model.TicketingCountResponse;
 import ntk.base.api.ticket.model.TicketingDepartemenList;
 import ntk.base.api.ticket.model.TicketingFaqListRequest;
 import ntk.base.api.ticket.model.TicketingFaqListResponse;
@@ -20,6 +22,12 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface ITicket {
+
+    @POST("api/TicketingTask/count/")
+    @Headers({"content-type: application/json"})
+    Observable<TicketingCountResponse> GetCount(@HeaderMap Map<String, String> headers, @Body TicketingCountRequest request);
+
+    //
 
     @POST("api/app/")
     @Headers({"content-type: application/json", "layout: TicketingTaskList"})

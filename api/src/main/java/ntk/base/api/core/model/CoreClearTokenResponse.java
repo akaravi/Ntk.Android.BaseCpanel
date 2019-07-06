@@ -6,7 +6,7 @@ import java.util.List;
 
 import ntk.base.api.model.ErrorException;
 
-public class CoreUserResponse extends ErrorException {
+public class CoreClearTokenResponse extends ErrorException {
 
     @SerializedName("ListItems")
     public List<CoreUser> ListItems;

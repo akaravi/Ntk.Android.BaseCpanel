@@ -24,6 +24,8 @@ import ntk.base.api.news.model.NewsContentOtherInfoResponse;
 import ntk.base.api.news.model.NewsContentSimilarListRequest;
 import ntk.base.api.news.model.NewsContentViewRequest;
 import ntk.base.api.news.model.NewsContentResponse;
+import ntk.base.api.news.model.NewsCountRequest;
+import ntk.base.api.news.model.NewsCountResponse;
 import ntk.base.api.news.model.NewsTagRequest;
 import ntk.base.api.news.model.NewsTagResponse;
 import ntk.base.api.model.ErrorException;
@@ -34,6 +36,12 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface INews {
+
+    @POST("api/newscontent/count/")
+    @Headers({"content-type: application/json"})
+    Observable<NewsCountResponse> GetCount(@HeaderMap Map<String, String> headers, @Body NewsCountRequest request);
+
+    //
 
     @POST("api/app/")
     @Headers({"content-type: application/json", "layout: NewsContentList"})
