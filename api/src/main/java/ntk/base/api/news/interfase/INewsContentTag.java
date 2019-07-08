@@ -12,10 +12,12 @@ import ntk.base.api.news.model.NewsContentTagGetAllRequest;
 import ntk.base.api.news.model.NewsContentTagGetViewModelRequest;
 import ntk.base.api.news.model.NewsContentTagResponse;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.HeaderMap;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 
 public interface INewsContentTag {
 
@@ -31,11 +33,11 @@ public interface INewsContentTag {
     @Headers({"content-type: application/json"})
     Observable<NewsContentTagResponse> Add(@HeaderMap Map<String, String> headers, @Body NewsContentTagAddRequest request);
 
-    @POST("api/newsContentTag/edit/")
+    @PUT("api/newsContentTag/edit/")
     @Headers({"content-type: application/json"})
     Observable<NewsContentTagResponse> Edit(@HeaderMap Map<String, String> headers, @Body NewsContentTagEditRequest request);
 
-    @POST("api/newsContentTag/delete/")
+    @DELETE("api/newsContentTag/delete/")
     @Headers({"content-type: application/json"})
     Observable<NewsContentTagResponse> Delete(@HeaderMap Map<String, String> headers, @Body NewsContentTagDeleteRequest request);
 
