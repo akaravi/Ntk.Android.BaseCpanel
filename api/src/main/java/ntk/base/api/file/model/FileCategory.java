@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.model.BaseEntity;
+import ntk.base.api.model.BaseModuleEntity;
 
-public class FileCategory extends BaseEntity {
+public class FileCategory extends BaseModuleEntity {
 
     @SerializedName("Id")
     public long Id;

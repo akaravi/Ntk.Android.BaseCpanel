@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.news.model.NewsContent;
 import ntk.base.api.model.ErrorException;
+import ntk.base.api.news.entity.NewsContent;
 
 public class NewsContentResponse extends ErrorException {
 

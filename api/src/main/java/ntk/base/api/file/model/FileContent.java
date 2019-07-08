@@ -3,9 +3,9 @@ package ntk.base.api.file.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import ntk.base.api.model.BaseEntity;
+import ntk.base.api.model.BaseModuleEntity;
 
-public class FileContent  extends BaseEntity {
+public class FileContent  extends BaseModuleEntity {
 
 
     @SerializedName("Id")
