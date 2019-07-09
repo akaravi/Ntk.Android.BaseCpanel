@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.model.BaseEntity;
+import ntk.base.api.model.BaseCoreEntity;
 
-public class CoreAllMenuResponse extends BaseEntity {
+public class CoreAllMenuResponse extends BaseCoreEntity {
 
     @SerializedName("ListItems")
     public List<CoreAllMenu> ListItems;

@@ -2,9 +2,9 @@ package ntk.base.api.core.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import ntk.base.api.model.BaseEntity;
+import ntk.base.api.model.BaseCoreEntity;
 
-public class CoreLocation extends BaseEntity {
+public class CoreLocation extends BaseCoreEntity {
     @SerializedName("Id")
     public long Id;
 
