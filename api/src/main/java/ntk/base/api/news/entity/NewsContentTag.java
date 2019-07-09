@@ -23,31 +23,4 @@ public class NewsContentTag extends BaseModuleEntity {
 
     @SerializedName("ModuleTag")
     public NewsTag ModuleTag;
-
-    @SerializedName("Id")
-    public Long Id;
-
-    @SerializedName("AntiInjectionGuid")
-    public String AntiInjectionGuid;
-
-    @SerializedName("AntiInjectionDate")
-    public String AntiInjectionDate;
-
-    @SerializedName("ContentAndParameterValues")
-    public String ContentAndParameterValues;
-
-    @SerializedName("CreateAntiInjectionValue")
-    public Boolean CreateAntiInjectionValue;
-
-    @SerializedName("TokenActionState")
-    public String TokenActionState;
-
-    @SerializedName("AntiInjectionExpiredMinute")
-    public int AntiInjectionExpiredMinute;
-
-    @SerializedName("AntiInjectionToken")
-    public String AntiInjectionToken;
-
-    @SerializedName("AntiInjectionExpireDate")
-    public String AntiInjectionExpireDate;
 }

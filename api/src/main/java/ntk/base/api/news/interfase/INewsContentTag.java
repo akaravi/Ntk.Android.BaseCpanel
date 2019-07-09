@@ -4,13 +4,12 @@ import java.util.Map;
 
 import io.reactivex.Observable;
 import ntk.base.api.news.model.NewsContentTagAddRequest;
-import ntk.base.api.news.model.NewsContentTagCountRequest;
 import ntk.base.api.news.model.NewsContentTagDeleteRequest;
 import ntk.base.api.news.model.NewsContentTagEditRequest;
-import ntk.base.api.news.model.NewsContentTagExportfileRequest;
-import ntk.base.api.news.model.NewsContentTagGetAllRequest;
-import ntk.base.api.news.model.NewsContentTagGetViewModelRequest;
 import ntk.base.api.news.model.NewsContentTagResponse;
+import ntk.base.api.news.model.NewsCountRequest;
+import ntk.base.api.news.model.NewsExportFileRequest;
+import ntk.base.api.news.model.NewsGetAllRequest;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
@@ -23,11 +22,11 @@ public interface INewsContentTag {
 
     @POST("api/newsContentTag/getall/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentTagResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsContentTagGetAllRequest request);
+    Observable<NewsContentTagResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsGetAllRequest request);
 
     @GET("api/newsContentTag/getviewmodel/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentTagResponse> GetViewModel(@HeaderMap Map<String, String> headers, @Body NewsContentTagGetViewModelRequest request);
+    Observable<NewsContentTagResponse> GetViewModel(@HeaderMap Map<String, String> headers);
 
     @POST("api/newsContentTag/add/")
     @Headers({"content-type: application/json"})
@@ -43,9 +42,9 @@ public interface INewsContentTag {
 
     @POST("api/newsContentTag/exportfile/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentTagResponse> exportFile(@HeaderMap Map<String, String> headers, @Body NewsContentTagExportfileRequest request);
+    Observable<NewsContentTagResponse> exportFile(@HeaderMap Map<String, String> headers, @Body NewsExportFileRequest request);
 
     @POST("api/newsContentTag/count/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentTagResponse> Count(@HeaderMap Map<String, String> headers, @Body NewsContentTagCountRequest request);
+    Observable<NewsContentTagResponse> Count(@HeaderMap Map<String, String> headers, @Body NewsCountRequest request);
 }

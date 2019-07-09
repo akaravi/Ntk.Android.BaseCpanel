@@ -1,6 +1,6 @@
 package ntk.base.api.news.model;
 
-import ntk.base.api.model.FilterModel;
+import ntk.base.api.news.entity.NewsContentTag;
 
-public class NewsContentTagEditRequest extends FilterModel {
+public class NewsContentTagEditRequest extends NewsContentTag {
 }

@@ -5,8 +5,8 @@ import java.util.Map;
 import io.reactivex.Observable;
 import ntk.base.api.news.model.NewsContentOtherInfoAddBatchRequest;
 import ntk.base.api.news.model.NewsContentOtherInfoDeleteListRequest;
-import ntk.base.api.news.model.NewsContentOtherInfoGetAllRequest;
 import ntk.base.api.news.model.NewsContentOtherInfoResponse;
+import ntk.base.api.news.model.NewsGetAllRequest;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.HeaderMap;
@@ -17,7 +17,7 @@ public interface INewsContentOtherInfo {
 
     @POST("api/newsContentOtherInfo/GetAll/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentOtherInfoResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsContentOtherInfoGetAllRequest request);
+    Observable<NewsContentOtherInfoResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsGetAllRequest request);
 
     @DELETE("api/newsContentOtherInfo/DeleteList/")
     @Headers({"content-type: application/json"})

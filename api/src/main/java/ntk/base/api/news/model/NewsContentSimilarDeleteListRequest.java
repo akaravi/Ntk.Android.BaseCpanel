@@ -1,6 +1,13 @@
 package ntk.base.api.news.model;
 
-import ntk.base.api.model.FilterModel;
+import com.google.gson.annotations.SerializedName;
 
-public class NewsContentSimilarDeleteListRequest extends FilterModel {
+import java.util.List;
+
+import ntk.base.api.news.entity.NewsContentSimilar;
+
+public class NewsContentSimilarDeleteListRequest {
+
+    @SerializedName("list")
+    public List<NewsContentSimilar> List;
 }

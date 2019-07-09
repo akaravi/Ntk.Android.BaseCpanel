@@ -6,10 +6,9 @@ import io.reactivex.Observable;
 import ntk.base.api.news.model.NewsCategoryAddRequest;
 import ntk.base.api.news.model.NewsCategoryDeleteRequest;
 import ntk.base.api.news.model.NewsCategoryEditRequest;
-import ntk.base.api.news.model.NewsCategoryGetAllRequest;
-import ntk.base.api.news.model.NewsCategoryGetViewModelRequest;
 import ntk.base.api.news.model.NewsCategoryNewsCategoryRequest;
 import ntk.base.api.news.model.NewsCategoryResponse;
+import ntk.base.api.news.model.NewsGetAllRequest;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
@@ -22,11 +21,11 @@ public interface INewsCategory {
 
     @POST("api/newscategory/getall/")
     @Headers({"content-type: application/json"})
-    Observable<NewsCategoryResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsCategoryGetAllRequest request);
+    Observable<NewsCategoryResponse> GetAll(@HeaderMap Map<String, String> headers, @Body NewsGetAllRequest request);
 
     @GET("api/newscategory/getviewmodel/")
     @Headers({"content-type: application/json"})
-    Observable<NewsCategoryResponse> GetViewModel(@HeaderMap Map<String, String> headers, @Body NewsCategoryGetViewModelRequest request);
+    Observable<NewsCategoryResponse> GetViewModel(@HeaderMap Map<String, String> headers);
 
     @POST("api/newscategory/add/")
     @Headers({"content-type: application/json"})

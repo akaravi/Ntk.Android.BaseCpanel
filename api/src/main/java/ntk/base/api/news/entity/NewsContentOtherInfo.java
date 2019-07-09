@@ -27,30 +27,9 @@ public class NewsContentOtherInfo extends BaseModuleEntity {
     @SerializedName("NewsContent")
     public NewsContent NewsContent;
 
-    @SerializedName("AntiInjectionGuid")
-    public String AntiInjectionGuid;
-
     @SerializedName("OtherInfos")
     public NewsContentOtherInfo OtherInfos;
 
-    @SerializedName("ContentAndParameterValues")
-    public String ContentAndParameterValues;
-
-    @SerializedName("CreateAntiInjectionValue")
-    public Boolean CreateAntiInjectionValue;
-
-    @SerializedName("TokenActionState")
-    public String TokenActionState;
-
     @SerializedName("FromDate")
     public String FromDate;
-
-    @SerializedName("AntiInjectionExpiredMinute")
-    public int AntiInjectionExpiredMinute;
-
-    @SerializedName("AntiInjectionToken")
-    public String AntiInjectionToken;
-
-    @SerializedName("AntiInjectionExpireDate")
-    public String AntiInjectionExpireDate;
 }

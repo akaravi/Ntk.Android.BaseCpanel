@@ -98,31 +98,4 @@ public class NewsContent extends BaseModuleEntity {
 
     @SerializedName("LinkFileIdsSrc")
     public String LinkFileIdsSrc;
-
-    @SerializedName("LinkSiteId")
-    public String LinkSiteId;
-
-    @SerializedName("Id")
-    public String Id;
-
-    @SerializedName("AntiInjectionGuid")
-    public String AntiInjectionGuid;
-
-    @SerializedName("AntiInjectionDate")
-    public String AntiInjectionDate;
-
-    @SerializedName("CreateAntiInjectionValue")
-    public String CreateAntiInjectionValue;
-
-    @SerializedName("TokenActionState")
-    public String TokenActionState;
-
-    @SerializedName("AntiInjectionExpiredMinute")
-    public String AntiInjectionExpiredMinute;
-
-    @SerializedName("AntiInjectionToken")
-    public String AntiInjectionToken;
-
-    @SerializedName("AntiInjectionExpireDate")
-    public String AntiInjectionExpireDate;
 }

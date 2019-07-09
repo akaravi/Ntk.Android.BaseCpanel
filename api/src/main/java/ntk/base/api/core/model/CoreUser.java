@@ -2,9 +2,9 @@ package ntk.base.api.core.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import ntk.base.api.model.BaseEntity;
+import ntk.base.api.model.BaseCoreEntity;
 
-class CoreUser extends BaseEntity {
+class CoreUser extends BaseCoreEntity {
 
     @SerializedName("ExpireDate")
     public String ExpireDate;

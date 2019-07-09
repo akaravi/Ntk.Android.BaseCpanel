@@ -2,5 +2,5 @@ package ntk.base.api.news.model;
 
 import ntk.base.api.model.FilterModel;
 
-public class NewsTagExportfileRequest extends FilterModel {
+public class NewsGetAllRequest extends FilterModel {
 }

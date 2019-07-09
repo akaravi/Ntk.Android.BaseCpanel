@@ -25,6 +25,12 @@ public class BaseCoreEntity {
     @SerializedName("AntiInjectionGuid")
     public String AntiInjectionGuid;
 
+    @SerializedName("AntiInjectionDate")
+    public String AntiInjectionDate;
+
+    @SerializedName("ContentAndParameterValues")
+    public String ContentAndParameterValues;
+
     @SerializedName("CreateAntiInjectionValue")
     public Boolean CreateAntiInjectionValue;
 
@@ -39,4 +45,7 @@ public class BaseCoreEntity {
 
     @SerializedName("AntiInjectionExpireDate")
     public String AntiInjectionExpireDate;
+
+    @SerializedName("Id")
+    public Long Id;
 }

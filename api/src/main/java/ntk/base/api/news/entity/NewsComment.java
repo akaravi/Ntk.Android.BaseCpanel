@@ -32,25 +32,4 @@ public class NewsComment extends BaseModuleEntity {
 
     @SerializedName("NewsContent")
     public NewsContent NewsContent;
-
-    @SerializedName("Id")
-    public Long Id;
-
-    @SerializedName("AntiInjectionGuid")
-    public String AntiInjectionGuid;
-
-    @SerializedName("CreateAntiInjectionValue")
-    public Boolean CreateAntiInjectionValue;
-
-    @SerializedName("TokenActionState")
-    public String TokenActionState;
-
-    @SerializedName("AntiInjectionExpiredMinute")
-    public int AntiInjectionExpiredMinute;
-
-    @SerializedName("AntiInjectionToken")
-    public String AntiInjectionToken;
-
-    @SerializedName("AntiInjectionExpireDate")
-    public String AntiInjectionExpireDate;
 }

@@ -26,28 +26,4 @@ public class NewsContentSimilar extends BaseModuleEntity {
 
     @SerializedName("Destination")
     public NewsContent Destination;
-
-    @SerializedName("Id")
-    public Long Id;
-
-    @SerializedName("AntiInjectionGuid")
-    public String AntiInjectionGuid;
-
-    @SerializedName("AntiInjectionDate")
-    public String AntiInjectionDate;
-
-    @SerializedName("CreateAntiInjectionValue")
-    public Boolean CreateAntiInjectionValue;
-
-    @SerializedName("TokenActionState")
-    public String TokenActionState;
-
-    @SerializedName("AntiInjectionExpiredMinute")
-    public int AntiInjectionExpiredMinute;
-
-    @SerializedName("AntiInjectionToken")
-    public String AntiInjectionToken;
-
-    @SerializedName("AntiInjectionExpireDate")
-    public String AntiInjectionExpireDate;
 }
