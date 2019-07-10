@@ -2,7 +2,7 @@ package ntk.base.api.core.model;
 
 import com.google.gson.annotations.SerializedName;
 
-class CoreSite {
+public class CoreSite {
 
     @SerializedName("LinkCreatedBySiteId")
     public Long LinkCreatedBySiteId;

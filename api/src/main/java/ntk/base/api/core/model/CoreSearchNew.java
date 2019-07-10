@@ -1,4 +1,4 @@
 package ntk.base.api.core.model;
 
-class CoreSearchNew {
+public class CoreSearchNew {
 }

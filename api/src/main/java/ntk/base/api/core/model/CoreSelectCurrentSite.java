@@ -2,7 +2,7 @@ package ntk.base.api.core.model;
 
 import com.google.gson.annotations.SerializedName;
 
-class CoreSelectCurrentSite {
+public class CoreSelectCurrentSite {
 
     @SerializedName("ExpireDate")
     public String ExpireDate;
