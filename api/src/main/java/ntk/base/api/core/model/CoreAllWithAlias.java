@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import ntk.base.api.model.BaseCoreEntity;
 
-class CoreAllWithAlias extends BaseCoreEntity {
+public class CoreAllWithAlias extends BaseCoreEntity {
 
     @SerializedName("LinkCreatedBySiteId")
     public int LinkCreatedBySiteId;
