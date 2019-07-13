@@ -6,6 +6,4 @@ public class BaseModuleEntity extends  BaseCoreEntity {
 
     @SerializedName("LinkSiteId")
     public Long LinkSiteId;
-
-
 }
