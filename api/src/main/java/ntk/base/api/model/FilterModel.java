@@ -29,4 +29,10 @@ public class FilterModel {
 
     @SerializedName("Filters")
     public List<Filters> filters;
+
+    @SerializedName("NeedToRunFakePagination")
+    public Boolean NeedToRunFakePagination;
+
+    @SerializedName("ContentFullSearch")
+    public String ContentFullSearch;
 }

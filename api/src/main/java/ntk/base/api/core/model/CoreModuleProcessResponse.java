@@ -4,14 +4,14 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.core.entity.CoreLocation;
+import ntk.base.api.core.entity.CoreModuleProcess;
 import ntk.base.api.model.ErrorException;
 
-public class CoreLocationResponse extends ErrorException {
+public class CoreModuleProcessResponse extends ErrorException {
 
     @SerializedName("ListItems")
-    public List<CoreLocation> ListItems;
+    public List<CoreModuleProcess> ListItems;
 
     @SerializedName("Item")
-    public CoreLocation Item;
+    public CoreModuleProcess Item;
 }

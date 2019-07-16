@@ -2,5 +2,5 @@ package ntk.base.api.core.model;
 
 import ntk.base.api.model.FilterModel;
 
-public class CoreCountRequest extends FilterModel {
+public class CoreGetAllLocationTypeRequest extends FilterModel {
 }
