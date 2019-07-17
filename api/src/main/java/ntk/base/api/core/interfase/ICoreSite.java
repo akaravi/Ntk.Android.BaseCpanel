@@ -11,6 +11,8 @@ import ntk.base.api.core.model.CoreSiteDeleteRequest;
 import ntk.base.api.core.model.CoreSiteEditRequest;
 import ntk.base.api.core.model.CoreSiteGetAllWithAliasRequest;
 import ntk.base.api.core.model.CoreSiteResponse;
+import ntk.base.api.core.model.CoreSiteSearchNewRequest;
+import ntk.base.api.core.model.CoreSiteSearchRequest;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
@@ -52,5 +54,15 @@ public interface ICoreSite {
     @POST("api/CoreModuleSite/count/")
     @Headers({"content-type: application/json"})
     Observable<CoreSiteResponse> Count(@HeaderMap Map<String, String> headers, @Body CoreCountRequest request);
+
+    @POST("api/CoreSite/search_new/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreSiteResponse> SearchNew(@HeaderMap Map<String, String> headers, @Body CoreSiteSearchNewRequest request);
+
+    @POST("api/CoreSite/search/")
+    @Headers({"content-type: application/json"})
+    Observable<CoreSiteResponse> Search(@HeaderMap Map<String, String> headers, @Body CoreSiteSearchRequest request);
+
+
 }
 
