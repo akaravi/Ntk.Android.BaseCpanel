@@ -21,7 +21,7 @@ public class CoreModuleSaleInvoice extends BaseCoreEntity {
     public Boolean HasUsed;
 
     @SerializedName("Price")
-    public Float Price;
+    public Long Price;
 
     @SerializedName("LinkModuleSaleSerialId")
     public Long LinkModuleSaleSerialId;

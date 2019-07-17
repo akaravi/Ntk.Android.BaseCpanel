@@ -19,7 +19,7 @@ public class CoreModuleSaleItem extends BaseCoreEntity {
     public Long LinkModuleId;
 
     @SerializedName("SalePrice")
-    public Float SalePrice;
+    public Long SalePrice;
 
     @SerializedName("EnumCmsModuleSaleItemType")
     public int EnumCmsModuleSaleItemType;
