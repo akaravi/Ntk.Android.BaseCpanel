@@ -1,4 +1,4 @@
-package ntk.base.api.file.model;
+package ntk.base.api.file.entity;
 
 
 import com.google.gson.annotations.SerializedName;
