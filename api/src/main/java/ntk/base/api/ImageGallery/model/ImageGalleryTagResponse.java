@@ -7,7 +7,7 @@ import java.util.List;
 import ntk.base.api.ImageGallery.entity.ImageGalleryTag;
 import ntk.base.api.model.ErrorException;
 
-public class ImgGalleryTagResponse extends ErrorException {
+public class ImageGalleryTagResponse extends ErrorException {
 
     @SerializedName("ListItems")
     public List<ImageGalleryTag> ListItems;
