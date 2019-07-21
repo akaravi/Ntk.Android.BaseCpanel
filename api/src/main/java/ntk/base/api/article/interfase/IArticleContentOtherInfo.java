@@ -29,7 +29,7 @@ public interface IArticleContentOtherInfo {
     @Headers({"content-type: application/json"})
     Observable<ArticleContentOtherInfoResponse> GetAll(@HeaderMap Map<String, String> headers, @Body ArticleGetAllRequest request);
 
-    @PUT("api/articleContentOtherInfo/addbatch/")
+    @PUT("api/articleContentOtherInfo/editbatch/")
     @Headers({"content-type: application/json"})
     Observable<ArticleContentOtherInfoResponse> EditBatch(@HeaderMap Map<String, String> headers, @Body ArticleContentOtherInfoEditBatchRequest request);
 }

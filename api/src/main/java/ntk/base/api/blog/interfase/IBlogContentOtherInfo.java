@@ -24,7 +24,7 @@ public interface IBlogContentOtherInfo {
     @Headers({"content-type: application/json"})
     Observable<BlogContentOtherInfoResponse> AddBatch(@HeaderMap Map<String, String> headers, @Body BlogContentOtherInfoAddBatchRequest request);
 
-    @PUT("api/BlogContentOtherInfo/addbatch/")
+    @PUT("api/BlogContentOtherInfo/editbatch/")
     @Headers({"content-type: application/json"})
     Observable<BlogContentOtherInfoResponse> EditBatch(@HeaderMap Map<String, String> headers, @Body BlogContentOtherInfoEditBatchRequest request);
 }

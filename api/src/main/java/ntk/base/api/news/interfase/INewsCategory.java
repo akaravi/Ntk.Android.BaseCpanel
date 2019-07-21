@@ -31,7 +31,7 @@ public interface INewsCategory {
     @Headers({"content-type: application/json"})
     Observable<NewsCategoryResponse> Add(@HeaderMap Map<String, String> headers, @Body NewsCategoryAddRequest request);
 
-    @POST("api/newscategory/")
+    @PUT("api/newscategory/")
     @Headers({"content-type: application/json"})
     Observable<NewsCategoryResponse> NewsCategory(@HeaderMap Map<String, String> headers, @Body NewsCategoryNewsCategoryRequest request);
 
