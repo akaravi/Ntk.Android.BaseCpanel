@@ -63,7 +63,7 @@ public class CoreCpMainMenu extends BaseModuleEntity {
     public CoreModule CmsModule;
 
     @SerializedName("Children")
-    public List<CoreModule> Children;
+    public List<CoreCpMainMenu> Children;
 
     @SerializedName("CmsCpMainMenuCmsUserGroup")
     public List<CoreUserGroup> CmsCpMainMenuCmsUserGroup;
