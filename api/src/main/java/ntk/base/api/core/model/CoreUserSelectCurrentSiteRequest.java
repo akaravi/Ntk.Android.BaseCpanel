@@ -1,6 +1,6 @@
 package ntk.base.api.core.model;
 
-import ntk.base.api.model.FilterModel;
+import ntk.base.api.model.BaseModuleEntity;
 
-public class CoreUserSelectCurrentSiteRequest extends FilterModel {
+public class CoreUserSelectCurrentSiteRequest extends BaseModuleEntity {
 }
