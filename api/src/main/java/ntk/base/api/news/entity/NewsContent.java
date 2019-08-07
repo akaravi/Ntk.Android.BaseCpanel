@@ -6,38 +6,38 @@ import ntk.base.api.model.BaseModuleEntity;
 
 public class NewsContent extends BaseModuleEntity {
 
-    @SerializedName("ExpireDate")
-    public String ExpireDate;
-
-    @SerializedName("ModuleCoreCreatedBy")
-    public String ModuleCoreCreatedBy;
-
-    @SerializedName("ModuleCoreUpdatedBy")
-    public String ModuleCoreUpdatedBy;
-
-    @SerializedName("Source")
-    public String Source;
-
-    @SerializedName("Comments")
-    public String Comments;
-
-    @SerializedName("virtual_Category")
-    public NewsCategory virtual_Category;
-
-    @SerializedName("Category")
-    public NewsCategory Category;
-
-    @SerializedName("ContentTags")
-    public NewsContentTag ContentTags;
-
-    @SerializedName("Similars")
-    public NewsContentSimilar Similars;
-
-    @SerializedName("OtherInfos")
-    public NewsContentOtherInfo OtherInfos;
-
-    @SerializedName("ContentAndParameterValues")
-    public String ContentAndParameterValues;
+//    @SerializedName("ExpireDate")
+//    public String ExpireDate;
+//
+//    @SerializedName("ModuleCoreCreatedBy")
+//    public String ModuleCoreCreatedBy;
+//
+//    @SerializedName("ModuleCoreUpdatedBy")
+//    public String ModuleCoreUpdatedBy;
+//
+//    @SerializedName("Source")
+//    public String Source;
+//
+//    @SerializedName("Comments")
+//    public String Comments;
+//
+//    @SerializedName("virtual_Category")
+//    public NewsCategory virtual_Category;
+//
+//    @SerializedName("Category")
+//    public NewsCategory Category;
+//
+//    @SerializedName("ContentTags")
+//    public NewsContentTag ContentTags;
+//
+//    @SerializedName("Similars")
+//    public NewsContentSimilar Similars;
+//
+//    @SerializedName("OtherInfos")
+//    public NewsContentOtherInfo OtherInfos;
+//
+//    @SerializedName("ContentAndParameterValues")
+//    public String ContentAndParameterValues;
 
     @SerializedName("Body")
     public String Body;
@@ -48,35 +48,35 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("FromDate")
     public String FromDate;
 
-    @SerializedName("Geolocationlatitude")
-    public String Geolocationlatitude;
+//    @SerializedName("Geolocationlatitude")
+//    public String Geolocationlatitude;
+//
+//    @SerializedName("Geolocationlongitude")
+//    public String Geolocationlongitude;
+//
+//    @SerializedName("Keyword")
+//    public String Keyword;
 
-    @SerializedName("Geolocationlongitude")
-    public String Geolocationlongitude;
-
-    @SerializedName("Keyword")
-    public String Keyword;
-
-    @SerializedName("LinkCategoryId")
-    public String LinkCategoryId;
-
-    @SerializedName("LinkFileIds")
-    public String LinkFileIds;
-
-    @SerializedName("LinkFilePodcastId")
-    public String LinkFilePodcastId;
-
-    @SerializedName("LinkFileMovieId")
-    public String LinkFileMovieId;
-
-    @SerializedName("LinkMainImageId")
-    public String LinkMainImageId;
-
-    @SerializedName("ScoreClick")
-    public String ScoreClick;
-
-    @SerializedName("ScoreSumPercent")
-    public String ScoreSumPercent;
+//    @SerializedName("LinkCategoryId")
+//    public String LinkCategoryId;
+//
+//    @SerializedName("LinkFileIds")
+//    public String LinkFileIds;
+//
+//    @SerializedName("LinkFilePodcastId")
+//    public String LinkFilePodcastId;
+//
+//    @SerializedName("LinkFileMovieId")
+//    public String LinkFileMovieId;
+//
+//    @SerializedName("LinkMainImageId")
+//    public String LinkMainImageId;
+//
+//    @SerializedName("ScoreClick")
+//    public String ScoreClick;
+//
+//    @SerializedName("ScoreSumPercent")
+//    public String ScoreSumPercent;
 
     @SerializedName("Title")
     public String Title;
@@ -84,18 +84,18 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ViewCount")
     public String ViewCount;
 
-    @SerializedName("Favorited")
-    public String Favorited;
-
-    @SerializedName("MainImageSrc")
-    public String MainImageSrc;
-
-    @SerializedName("LinkFilePodcastIdSrc")
-    public String LinkFilePodcastIdSrc;
-
-    @SerializedName("LinkFileMovieIdSrc")
-    public String LinkFileMovieIdSrc;
-
-    @SerializedName("LinkFileIdsSrc")
-    public String LinkFileIdsSrc;
+//    @SerializedName("Favorited")
+//    public String Favorited;
+//
+//    @SerializedName("MainImageSrc")
+//    public String MainImageSrc;
+//
+//    @SerializedName("LinkFilePodcastIdSrc")
+//    public String LinkFilePodcastIdSrc;
+//
+//    @SerializedName("LinkFileMovieIdSrc")
+//    public String LinkFileMovieIdSrc;
+//
+//    @SerializedName("LinkFileIdsSrc")
+//    public String LinkFileIdsSrc;
 }
