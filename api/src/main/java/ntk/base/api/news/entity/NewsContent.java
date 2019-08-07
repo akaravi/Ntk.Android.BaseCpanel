@@ -6,9 +6,9 @@ import ntk.base.api.model.BaseModuleEntity;
 
 public class NewsContent extends BaseModuleEntity {
 
-//    @SerializedName("ExpireDate")
-//    public String ExpireDate;
-//
+    @SerializedName("ExpireDate")
+    public String ExpireDate;
+
 //    @SerializedName("ModuleCoreCreatedBy")
 //    public String ModuleCoreCreatedBy;
 //
@@ -87,8 +87,8 @@ public class NewsContent extends BaseModuleEntity {
 //    @SerializedName("Favorited")
 //    public String Favorited;
 //
-//    @SerializedName("MainImageSrc")
-//    public String MainImageSrc;
+@SerializedName("MainImageSrc")
+public String MainImageSrc;
 //
 //    @SerializedName("LinkFilePodcastIdSrc")
 //    public String LinkFilePodcastIdSrc;
