@@ -3,8 +3,8 @@ package ntk.base.api.news.interfase;
 import java.util.Map;
 
 import io.reactivex.Observable;
+import ntk.base.api.news.entity.NewsContent;
 import ntk.base.api.news.model.NewsContentAddRequest;
-import ntk.base.api.news.model.NewsContentDeleteRequest;
 import ntk.base.api.news.model.NewsContentEditRequest;
 import ntk.base.api.news.model.NewsContentGetAllWithSimilarIdRequest;
 import ntk.base.api.news.model.NewsContentResponse;
@@ -44,7 +44,7 @@ public interface INewsContent {
     //    @DELETE("api/newsContent/delete/")
     @HTTP(method = "DELETE", path = "api/newsContent/delete/", hasBody = true)
     @Headers({"content-type: application/json"})
-    Observable<NewsContentResponse> Delete(@HeaderMap Map<String, String> headers, @Body NewsContentDeleteRequest request);
+    Observable<NewsContentResponse> Delete(@HeaderMap Map<String, String> headers, @Body NewsContent request);
 
     @POST("api/newsContent/exportfile/")
     @Headers({"content-type: application/json"})
