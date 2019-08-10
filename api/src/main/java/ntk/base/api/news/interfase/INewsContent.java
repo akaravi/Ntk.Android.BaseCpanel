@@ -12,8 +12,8 @@ import ntk.base.api.news.model.NewsCountRequest;
 import ntk.base.api.news.model.NewsExportFileRequest;
 import ntk.base.api.news.model.NewsGetAllRequest;
 import retrofit2.http.Body;
-import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.HTTP;
 import retrofit2.http.HeaderMap;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
@@ -41,7 +41,8 @@ public interface INewsContent {
     @Headers({"content-type: application/json"})
     Observable<NewsContentResponse> Edit(@HeaderMap Map<String, String> headers, @Body NewsContentEditRequest request);
 
-    @DELETE("api/newsContent/delete/")
+    //    @DELETE("api/newsContent/delete/")
+    @HTTP(method = "DELETE", path = "api/newsContent/delete/", hasBody = true)
     @Headers({"content-type: application/json"})
     Observable<NewsContentResponse> Delete(@HeaderMap Map<String, String> headers, @Body NewsContentDeleteRequest request);
 
