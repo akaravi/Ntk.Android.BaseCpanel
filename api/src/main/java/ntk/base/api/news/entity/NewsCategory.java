@@ -2,6 +2,8 @@ package ntk.base.api.news.entity;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 import ntk.base.api.model.BaseModuleEntity;
 
 public class NewsCategory extends BaseModuleEntity {
@@ -19,7 +21,7 @@ public class NewsCategory extends BaseModuleEntity {
     public NewsShareReciverCategory ShareReciverCategories;
 
     @SerializedName("Children")
-    public NewsCategory Children;
+    public List<NewsCategory> Children;
 
     @SerializedName("Contents")
     public Long Contents;
