@@ -23,10 +23,10 @@ public class NewsContent extends BaseModuleEntity {
 //
 //    @SerializedName("virtual_Category")
 //    public NewsCategory virtual_Category;
-//
-//    @SerializedName("Category")
-//    public NewsCategory Category;
-//
+
+    @SerializedName("Category")
+    public NewsCategory Category;
+
 //    @SerializedName("ContentTags")
 //    public NewsContentTag ContentTags;
 //
@@ -84,11 +84,11 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ViewCount")
     public String ViewCount;
 
-//    @SerializedName("Favorited")
+    //    @SerializedName("Favorited")
 //    public String Favorited;
 //
-@SerializedName("MainImageSrc")
-public String MainImageSrc;
+    @SerializedName("MainImageSrc")
+    public String MainImageSrc;
 //
 //    @SerializedName("LinkFilePodcastIdSrc")
 //    public String LinkFilePodcastIdSrc;
