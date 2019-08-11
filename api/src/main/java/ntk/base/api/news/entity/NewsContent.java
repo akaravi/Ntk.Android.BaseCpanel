@@ -14,10 +14,10 @@ public class NewsContent extends BaseModuleEntity {
 //
 //    @SerializedName("ModuleCoreUpdatedBy")
 //    public String ModuleCoreUpdatedBy;
-//
-//    @SerializedName("Source")
-//    public String Source;
-//
+
+    @SerializedName("Source")
+    public String Source;
+
 //    @SerializedName("Comments")
 //    public String Comments;
 //
@@ -27,9 +27,9 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("Category")
     public NewsCategory Category;
 
-//    @SerializedName("ContentTags")
-//    public NewsContentTag ContentTags;
-//
+    @SerializedName("ContentTags")
+    public NewsContentTag ContentTags;
+
 //    @SerializedName("Similars")
 //    public NewsContentSimilar Similars;
 //
@@ -53,9 +53,9 @@ public class NewsContent extends BaseModuleEntity {
 //
 //    @SerializedName("Geolocationlongitude")
 //    public String Geolocationlongitude;
-//
-//    @SerializedName("Keyword")
-//    public String Keyword;
+
+    @SerializedName("Keyword")
+    public String Keyword;
 
 //    @SerializedName("LinkCategoryId")
 //    public String LinkCategoryId;
@@ -86,7 +86,7 @@ public class NewsContent extends BaseModuleEntity {
 
     //    @SerializedName("Favorited")
 //    public String Favorited;
-//
+
     @SerializedName("MainImageSrc")
     public String MainImageSrc;
 //
