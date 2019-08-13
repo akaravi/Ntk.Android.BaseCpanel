@@ -49,10 +49,10 @@ public class NewsContent extends BaseModuleEntity {
     public String FromDate;
 
     @SerializedName("Geolocationlatitude")
-    public String Geolocationlatitude;
+    public Double Geolocationlatitude;
 
     @SerializedName("Geolocationlongitude")
-    public String Geolocationlongitude;
+    public Double Geolocationlongitude;
 
     @SerializedName("Keyword")
     public String Keyword;
