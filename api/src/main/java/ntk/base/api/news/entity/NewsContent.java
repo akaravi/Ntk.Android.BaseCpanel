@@ -20,9 +20,9 @@ public class NewsContent extends BaseModuleEntity {
 
 //    @SerializedName("Comments")
 //    public String Comments;
-//
-//    @SerializedName("virtual_Category")
-//    public NewsCategory virtual_Category;
+
+    @SerializedName("virtual_Category")
+    public NewsCategory virtual_Category;
 
     @SerializedName("Category")
     public NewsCategory Category;
@@ -60,17 +60,17 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("LinkCategoryId")
     public String LinkCategoryId;
 
-//    @SerializedName("LinkFileIds")
-//    public String LinkFileIds;
-//
-//    @SerializedName("LinkFilePodcastId")
-//    public String LinkFilePodcastId;
-//
-//    @SerializedName("LinkFileMovieId")
-//    public String LinkFileMovieId;
-//
-//    @SerializedName("LinkMainImageId")
-//    public String LinkMainImageId;
+    @SerializedName("LinkFileIds")
+    public String LinkFileIds;
+
+    @SerializedName("LinkFilePodcastId")
+    public String LinkFilePodcastId;
+
+    @SerializedName("LinkFileMovieId")
+    public String LinkFileMovieId;
+
+    @SerializedName("LinkMainImageId")
+    public String LinkMainImageId;
 
     @SerializedName("ScoreClick")
     public String ScoreClick;
@@ -84,12 +84,12 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ViewCount")
     public String ViewCount;
 
-//    @SerializedName("Favorited")
-//    public String Favorited;
+    @SerializedName("Favorited")
+    public String Favorited;
 
     @SerializedName("MainImageSrc")
     public String MainImageSrc;
-//
+
 //    @SerializedName("LinkFilePodcastIdSrc")
 //    public String LinkFilePodcastIdSrc;
 //
