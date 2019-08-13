@@ -2,6 +2,8 @@ package ntk.base.api.news.entity;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 import ntk.base.api.model.BaseModuleEntity;
 
 public class NewsContent extends BaseModuleEntity {
@@ -97,5 +99,5 @@ public class NewsContent extends BaseModuleEntity {
     public String LinkFileMovieIdSrc;
 
     @SerializedName("LinkFileIdsSrc")
-    public String LinkFileIdsSrc;
+    public List<String> LinkFileIdsSrc;
 }
