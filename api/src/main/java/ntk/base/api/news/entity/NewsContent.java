@@ -57,9 +57,9 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("Keyword")
     public String Keyword;
 
-//    @SerializedName("LinkCategoryId")
-//    public String LinkCategoryId;
-//
+    @SerializedName("LinkCategoryId")
+    public String LinkCategoryId;
+
 //    @SerializedName("LinkFileIds")
 //    public String LinkFileIds;
 //
@@ -84,7 +84,7 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ViewCount")
     public String ViewCount;
 
-    //    @SerializedName("Favorited")
+//    @SerializedName("Favorited")
 //    public String Favorited;
 
     @SerializedName("MainImageSrc")
