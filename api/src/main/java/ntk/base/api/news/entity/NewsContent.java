@@ -9,17 +9,17 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ExpireDate")
     public String ExpireDate;
 
-    @SerializedName("ModuleCoreCreatedBy")
-    public Long ModuleCoreCreatedBy;
-
-    @SerializedName("ModuleCoreUpdatedBy")
-    public Long ModuleCoreUpdatedBy;
+//    @SerializedName("ModuleCoreCreatedBy")
+//    public Long ModuleCoreCreatedBy;
+//
+//    @SerializedName("ModuleCoreUpdatedBy")
+//    public Long ModuleCoreUpdatedBy;
 
     @SerializedName("Source")
     public String Source;
 
-    @SerializedName("Comments")
-    public String Comments;
+//    @SerializedName("Comments")
+//    public String Comments;
 
     @SerializedName("virtual_Category")
     public NewsCategory virtual_Category;
@@ -30,14 +30,14 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ContentTags")
     public NewsContentTag ContentTags;
 
-    @SerializedName("Similars")
-    public NewsContentSimilar Similars;
-
-    @SerializedName("OtherInfos")
-    public NewsContentOtherInfo OtherInfos;
-
-    @SerializedName("ContentAndParameterValues")
-    public String ContentAndParameterValues;
+//    @SerializedName("Similars")
+//    public NewsContentSimilar Similars;
+//
+//    @SerializedName("OtherInfos")
+//    public NewsContentOtherInfo OtherInfos;
+//
+//    @SerializedName("ContentAndParameterValues")
+//    public String ContentAndParameterValues;
 
     @SerializedName("Body")
     public String Body;
