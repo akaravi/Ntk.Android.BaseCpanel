@@ -9,17 +9,17 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ExpireDate")
     public String ExpireDate;
 
-//    @SerializedName("ModuleCoreCreatedBy")
-//    public String ModuleCoreCreatedBy;
-//
-//    @SerializedName("ModuleCoreUpdatedBy")
-//    public String ModuleCoreUpdatedBy;
+    @SerializedName("ModuleCoreCreatedBy")
+    public String ModuleCoreCreatedBy;
+
+    @SerializedName("ModuleCoreUpdatedBy")
+    public String ModuleCoreUpdatedBy;
 
     @SerializedName("Source")
     public String Source;
 
-//    @SerializedName("Comments")
-//    public String Comments;
+    @SerializedName("Comments")
+    public String Comments;
 
     @SerializedName("virtual_Category")
     public NewsCategory virtual_Category;
@@ -30,14 +30,14 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ContentTags")
     public NewsContentTag ContentTags;
 
-//    @SerializedName("Similars")
-//    public NewsContentSimilar Similars;
-//
-//    @SerializedName("OtherInfos")
-//    public NewsContentOtherInfo OtherInfos;
-//
-//    @SerializedName("ContentAndParameterValues")
-//    public String ContentAndParameterValues;
+    @SerializedName("Similars")
+    public NewsContentSimilar Similars;
+
+    @SerializedName("OtherInfos")
+    public NewsContentOtherInfo OtherInfos;
+
+    @SerializedName("ContentAndParameterValues")
+    public String ContentAndParameterValues;
 
     @SerializedName("Body")
     public String Body;
@@ -90,12 +90,12 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("MainImageSrc")
     public String MainImageSrc;
 
-//    @SerializedName("LinkFilePodcastIdSrc")
-//    public String LinkFilePodcastIdSrc;
-//
-//    @SerializedName("LinkFileMovieIdSrc")
-//    public String LinkFileMovieIdSrc;
-//
-//    @SerializedName("LinkFileIdsSrc")
-//    public String LinkFileIdsSrc;
+    @SerializedName("LinkFilePodcastIdSrc")
+    public String LinkFilePodcastIdSrc;
+
+    @SerializedName("LinkFileMovieIdSrc")
+    public String LinkFileMovieIdSrc;
+
+    @SerializedName("LinkFileIdsSrc")
+    public String LinkFileIdsSrc;
 }
