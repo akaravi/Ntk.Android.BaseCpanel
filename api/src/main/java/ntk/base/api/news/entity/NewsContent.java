@@ -32,14 +32,14 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("ContentTags")
     public NewsContentTag ContentTags;
 
-//    @SerializedName("Similars")
-//    public NewsContentSimilar Similars;
-//
-//    @SerializedName("OtherInfos")
-//    public NewsContentOtherInfo OtherInfos;
-//
-//    @SerializedName("ContentAndParameterValues")
-//    public String ContentAndParameterValues;
+    @SerializedName("Similars")
+    public NewsContentSimilar Similars;
+
+    @SerializedName("OtherInfos")
+    public NewsContentOtherInfo OtherInfos;
+
+    @SerializedName("ContentAndParameterValues")
+    public String ContentAndParameterValues;
 
     @SerializedName("Body")
     public String Body;
