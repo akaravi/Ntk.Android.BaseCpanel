@@ -87,7 +87,7 @@ public class NewsContent extends BaseModuleEntity {
     public String ViewCount;
 
     @SerializedName("Favorited")
-    public String Favorited;
+    public Boolean Favorited;
 
     @SerializedName("MainImageSrc")
     public String MainImageSrc;
