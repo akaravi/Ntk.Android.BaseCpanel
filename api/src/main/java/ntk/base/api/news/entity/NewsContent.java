@@ -20,8 +20,8 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("Source")
     public String Source;
 
-//    @SerializedName("Comments")
-//    public String Comments;
+    @SerializedName("Comments")
+    public String Comments;
 
     @SerializedName("virtual_Category")
     public NewsCategory virtual_Category;
