@@ -48,11 +48,11 @@ public class NewsContent extends BaseModuleEntity {
     @SerializedName("FromDate")
     public String FromDate;
 
-//    @SerializedName("Geolocationlatitude")
-//    public String Geolocationlatitude;
-//
-//    @SerializedName("Geolocationlongitude")
-//    public String Geolocationlongitude;
+    @SerializedName("Geolocationlatitude")
+    public String Geolocationlatitude;
+
+    @SerializedName("Geolocationlongitude")
+    public String Geolocationlongitude;
 
     @SerializedName("Keyword")
     public String Keyword;
@@ -71,12 +71,12 @@ public class NewsContent extends BaseModuleEntity {
 //
 //    @SerializedName("LinkMainImageId")
 //    public String LinkMainImageId;
-//
-//    @SerializedName("ScoreClick")
-//    public String ScoreClick;
-//
-//    @SerializedName("ScoreSumPercent")
-//    public String ScoreSumPercent;
+
+    @SerializedName("ScoreClick")
+    public String ScoreClick;
+
+    @SerializedName("ScoreSumPercent")
+    public String ScoreSumPercent;
 
     @SerializedName("Title")
     public String Title;
