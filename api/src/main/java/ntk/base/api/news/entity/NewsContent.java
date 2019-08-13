@@ -10,10 +10,10 @@ public class NewsContent extends BaseModuleEntity {
     public String ExpireDate;
 
     @SerializedName("ModuleCoreCreatedBy")
-    public String ModuleCoreCreatedBy;
+    public Long ModuleCoreCreatedBy;
 
     @SerializedName("ModuleCoreUpdatedBy")
-    public String ModuleCoreUpdatedBy;
+    public Long ModuleCoreUpdatedBy;
 
     @SerializedName("Source")
     public String Source;
