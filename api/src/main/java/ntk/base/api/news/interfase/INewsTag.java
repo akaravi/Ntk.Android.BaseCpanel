@@ -10,6 +10,7 @@ import ntk.base.api.news.model.NewsTagAddRequest;
 import ntk.base.api.news.model.NewsTagDeleteRequest;
 import ntk.base.api.news.model.NewsTagEditRequest;
 import ntk.base.api.news.model.NewsTagResponse;
+import ntk.base.api.news.model.NewsTagSearchRequest;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
@@ -47,4 +48,8 @@ public interface INewsTag {
     @POST("api/newstag/count/")
     @Headers({"content-type: application/json"})
     Observable<NewsTagResponse> Count(@HeaderMap Map<String, String> headers, @Body NewsCountRequest request);
+
+    @POST("api/newstag/searchtag/")
+    @Headers({"content-type: application/json"})
+    Observable<NewsTagResponse> Searching(@HeaderMap Map<String, String> headers, @Body NewsTagSearchRequest request);
 }
