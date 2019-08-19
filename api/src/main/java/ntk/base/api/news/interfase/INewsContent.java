@@ -4,8 +4,7 @@ import java.util.Map;
 
 import io.reactivex.Observable;
 import ntk.base.api.news.entity.NewsContent;
-import ntk.base.api.news.model.NewsContentAddRequest;
-import ntk.base.api.news.model.NewsContentEditRequest;
+import ntk.base.api.news.model.NewsContentAddAndEditRequest;
 import ntk.base.api.news.model.NewsContentGetAllWithSimilarIdRequest;
 import ntk.base.api.news.model.NewsContentResponse;
 import ntk.base.api.news.model.NewsCountRequest;
@@ -36,11 +35,11 @@ public interface INewsContent {
 
     @POST("api/newsContent/add/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentResponse> Add(@HeaderMap Map<String, String> headers, @Body NewsContentAddRequest request);
+    Observable<NewsContentResponse> Add(@HeaderMap Map<String, String> headers, @Body NewsContentAddAndEditRequest request);
 
     @PUT("api/newsContent/edit/")
     @Headers({"content-type: application/json"})
-    Observable<NewsContentResponse> Edit(@HeaderMap Map<String, String> headers, @Body NewsContentEditRequest request);
+    Observable<NewsContentResponse> Edit(@HeaderMap Map<String, String> headers, @Body NewsContentAddAndEditRequest request);
 
     @HTTP(method = "DELETE", path = "api/newsContent/delete/", hasBody = true)
     @Headers({"content-type: application/json"})
