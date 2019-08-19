@@ -3,6 +3,7 @@ package ntk.base.api.news.interfase;
 import java.util.Map;
 
 import io.reactivex.Observable;
+import ntk.base.api.news.model.NewsContentTagAddBatchRequest;
 import ntk.base.api.news.model.NewsContentTagAddRequest;
 import ntk.base.api.news.model.NewsContentTagDeleteRequest;
 import ntk.base.api.news.model.NewsContentTagEditRequest;
@@ -47,4 +48,8 @@ public interface INewsContentTag {
     @POST("api/newsContentTag/count/")
     @Headers({"content-type: application/json"})
     Observable<NewsContentTagResponse> Count(@HeaderMap Map<String, String> headers, @Body NewsCountRequest request);
+
+    @POST("api/newsContentTag/addbatch/")
+    @Headers({"content-type: application/json"})
+    Observable<NewsContentTagResponse> AddBatch(@HeaderMap Map<String, String> headers, @Body NewsContentTagAddBatchRequest request);
 }
