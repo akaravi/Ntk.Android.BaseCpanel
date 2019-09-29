@@ -1,8 +1,8 @@
-package ntk.base.api.model.theme;
+package ntk.base.api.baseModel.theme;
 
 import com.google.gson.annotations.SerializedName;
 
-public class HamberMenu {
+public class SearchBox {
 
     @SerializedName("BgColor")
     public String Color;

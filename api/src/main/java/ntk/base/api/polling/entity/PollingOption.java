@@ -2,7 +2,7 @@ package ntk.base.api.polling.entity;
 
 import com.google.gson.annotations.SerializedName;
 
-import ntk.base.api.model.BaseModuleEntity;
+import ntk.base.api.baseModel.BaseModuleEntity;
 
 public class PollingOption extends BaseModuleEntity {
 

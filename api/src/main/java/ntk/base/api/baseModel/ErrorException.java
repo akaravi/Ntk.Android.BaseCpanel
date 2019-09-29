@@ -1,4 +1,4 @@
-package ntk.base.api.model;
+package ntk.base.api.baseModel;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -31,10 +31,3 @@ public class ErrorException {
     public List<ErrorInfo> Errors;
 }
 
-class ErrorInfo {
-    @SerializedName("ErrorMessage")
-    public String ErrorMessage;
-
-    @SerializedName("ErrorType")
-    public int ErrorType;
-}

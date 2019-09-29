@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import ntk.base.api.model.BaseCoreEntity;
+import ntk.base.api.baseModel.BaseCoreEntity;
 
 public class CoreModuleSaleInvoice extends BaseCoreEntity {
 

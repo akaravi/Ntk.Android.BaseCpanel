@@ -1,4 +1,4 @@
-package ntk.base.api.model.theme;
+package ntk.base.api.baseModel.theme;
 
 import com.google.gson.annotations.SerializedName;
 
